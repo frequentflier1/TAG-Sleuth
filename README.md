@@ -68,14 +68,19 @@ First 4 bytes of transaction input data (e.g., `0xa9059cbb` = transfer)
 
 **Usage**
 Requirements
-
 Dune Analytics account
-Access to trace tables for listed chains
 
-Execution
--- Copy entire query into Dune Analytics query editor
--- Estimated runtime: 2-5 minutes
--- Results: ~236 rows (one per contract)
+## Files
+
+- **[contract_call_analysis.sql](./contract_call_analysis.sql)** - Main query for analyzing contract calls
+- **[README.md](./README.md)** - This documentation
+
+## Quick Start
+
+1. Open [contract_call_analysis.sql](./contract_call_analysis.sql)
+2. Copy the entire query
+3. Paste into Dune Analytics query editor
+4. Click "Run"
 
 Example Output
 chain     | contract  | label              | eoa_calls | contract_calls | top_fn_1_selector
